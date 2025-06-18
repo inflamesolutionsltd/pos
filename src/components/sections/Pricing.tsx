@@ -1,85 +1,161 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { useState } from "react";
 
-const plans = [
-	{
-		name: "Basic Plan",
-		subtitle: "Best for Small Shops",
-		price: "BDT 198",
-		period: "/month",
-		description: "Perfect for single location businesses",
-		features: [
-			"Product Uploads (100)",
-			"Purchases Management",
-			"Sales Management",
-			"Expense Management",
-			"User - 1",
-			"Admin Panel",
-			"Basic Reporting",
-			"Online Trasnning x 2",
-			"Customer Support",
-
-		],
-		popular: false,
-	},
-	{
-		name: "Standard Plan",
-		subtitle: "For Growing Businesses",
-		price: "BDT 389",
-		period: "/month",
-		description: "Most popular for expanding businesses",
-		features: [
-			"Product Limits (1000)",
-			"Purchases Management",
-			"Sales Management",
-			"Expense Management",
-			"User - 3",
-			"Admin Panel",
-			"Quatations",
-			"Products Variants",
-			"Online Trasnning x 5",
-			"Customer Support",
-			"5 Users",
-			"Monthly Data Backup",
-			"Email & SMS Notification",
-			"Priority Support",
-			"Advanced analytics",
-		],
-		popular: true,
-	},
-	{
-		name: "Premium Plan",
-		subtitle: "Large-Scale Solution",
-		price: "BDT 899",
-		period: "/month",
-		description: "For large scale operations",
-		features: [
-			"Product Limits (Unlimited)",
-			"Purchases Management",
-			"Sales Management",
-			"Expense Management",
-			"User - 5",
-			"Admin Panel",
-			"Quatations",
-			"Products Variants",
-			"Online Trasnning x 5",
-			"Customer Support",
-			"5 Users",
-			"Daily Data Backup",
-			"Email & SMS Notification",
-			"Priority Support",
-			"Advanced analytics",
-			"Payroll Management",
-			"Offline Traning",
-			"Actiovity Log",
-			"All Reports",
-		],
-		popular: false,
-	},
-];
+const plans = {
+	monthly: [
+		{
+			name: "Basic Plan",
+			subtitle: "Best for Small Shops",
+			price: "BDT 198",
+			period: "/month",
+			description: "Perfect for single location businesses",
+			features: [
+				"Single Location",
+				"1 POS Terminal",
+				"Basic Reports",
+				"Stock & Sales Management",
+				"Email support",
+			],
+			popular: false,
+		},
+		{
+			name: "Standard Plan",
+			subtitle: "For Growing Businesses",
+			price: "BDT 389",
+			period: "/month",
+			description: "Most popular for expanding businesses",
+			features: [
+				"Up to 3 Locations",
+				"5 Users",
+				"Full Feature Access",
+				"Email & SMS Notification",
+				"Priority Support",
+				"Advanced analytics",
+			],
+			popular: true,
+		},
+		{
+			name: "Premium Plan",
+			subtitle: "Large-Scale Solution",
+			price: "BDT 899",
+			period: "",
+			description: "For large scale operations",
+			features: [
+				"Unlimited Locations",
+				"Unlimited Users",
+				"Custom Features",
+				"API Access & Integration",
+				"Dedicated Support Team",
+				"SLA guarantee",
+			],
+			popular: false,
+		},
+	],
+	sixMonths: [
+		{
+			name: "Basic Plan",
+			subtitle: "Best for Small Shops",
+			price: "BDT 1100",
+			period: "/6 months",
+			description: "Perfect for single location businesses",
+			features: [
+				"Single Location",
+				"1 POS Terminal",
+				"Basic Reports",
+				"Stock & Sales Management",
+				"Email support",
+			],
+			popular: false,
+		},
+		{
+			name: "Standard Plan",
+			subtitle: "For Growing Businesses",
+			price: "BDT 2200",
+			period: "/6 months",
+			description: "Most popular for expanding businesses",
+			features: [
+				"Up to 3 Locations",
+				"5 Users",
+				"Full Feature Access",
+				"Email & SMS Notification",
+				"Priority Support",
+				"Advanced analytics",
+			],
+			popular: true,
+		},
+		{
+			name: "Premium Plan",
+			subtitle: "Large-Scale Solution",
+			price: "BDT 5000",
+			period: "",
+			description: "For large scale operations",
+			features: [
+				"Unlimited Locations",
+				"Unlimited Users",
+				"Custom Features",
+				"API Access & Integration",
+				"Dedicated Support Team",
+				"SLA guarantee",
+			],
+			popular: false,
+		},
+	],
+	yearly: [
+		{
+			name: "Basic Plan",
+			subtitle: "Best for Small Shops",
+			price: "BDT 2000",
+			period: "/year",
+			description: "Perfect for single location businesses",
+			features: [
+				"Single Location",
+				"1 POS Terminal",
+				"Basic Reports",
+				"Stock & Sales Management",
+				"Email support",
+			],
+			popular: false,
+		},
+		{
+			name: "Standard Plan",
+			subtitle: "For Growing Businesses",
+			price: "BDT 4000",
+			period: "/year",
+			description: "Most popular for expanding businesses",
+			features: [
+				"Up to 3 Locations",
+				"5 Users",
+				"Full Feature Access",
+				"Email & SMS Notification",
+				"Priority Support",
+				"Advanced analytics",
+			],
+			popular: true,
+		},
+		{
+			name: "Premium Plan",
+			subtitle: "Large-Scale Solution",
+			price: "BDT 10000",
+			period: "",
+			description: "For large scale operations",
+			features: [
+				"Unlimited Locations",
+				"Unlimited Users",
+				"Custom Features",
+				"API Access & Integration",
+				"Dedicated Support Team",
+				"SLA guarantee",
+			],
+			popular: false,
+		},
+	],
+};
 
 export const Pricing = () => {
+	const [selectedPlan, setSelectedPlan] = useState("monthly");
+
 	return (
 		<section id="pricing" className="py-20 bg-white relative overflow-hidden">
 			<div className="absolute inset-0">
@@ -96,28 +172,46 @@ export const Pricing = () => {
 						Explore flexible pricing plans to suit every business stage—from startups
 						to enterprises. Start with a free trial or request a demo today.
 					</p>
-					<div className="flex flex-col sm:flex-row gap-4 justify-center">
-						<Button className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-600 hover:to-red-900 text-white shadow-lg shadow-green-500/25">
-							View Pricing
-						</Button>
-						<Button
-							variant="outline"
-							className="border-green-300 text-white-600 hover:bg-green-50 hover:text-green-600 transition-colors"
+					<div className="flex justify-center gap-4">
+						<button
+							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "monthly"
+									? "bg-green-600 text-white"
+									: "bg-gray-200 text-gray-800"
+								}`}
+							onClick={() => setSelectedPlan("monthly")}
 						>
-							Book a Free Demo
-						</Button>
+							Monthly
+						</button>
+						<button
+							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "sixMonths"
+									? "bg-green-600 text-white"
+									: "bg-gray-200 text-gray-800"
+								}`}
+							onClick={() => setSelectedPlan("sixMonths")}
+						>
+							6 Months
+						</button>
+						<button
+							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "yearly"
+									? "bg-green-600 text-white"
+									: "bg-gray-200 text-gray-800"
+								}`}
+							onClick={() => setSelectedPlan("yearly")}
+						>
+							Yearly
+						</button>
 					</div>
 				</div>
 
 				<div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-					{plans.map((plan, index) => {
+					{plans[selectedPlan].map((plan, index) => {
 						const isPopular = plan.popular;
 						return (
 							<Card
 								key={plan.name}
 								className={`relative transition-all duration-500 animate-fade-in flex flex-col items-center
           ${index === 1
-									? "z-20 scale-110 border-2 border-pink-600 bg-white shadow-2xl shadow-pink-200/40 hover:shadow-red-900/40 ring-2 ring-pink-400 min-h-[950px] md:min-h-[700px]"
+									? "z-20 scale-110 border-2 border-pink-600 bg-white shadow-2xl shadow-pink-200/40 hover:shadow-red-900/40 ring-2 ring-pink-400 min-h-[650px] md:min-h-[700px]"
 									: "z-10 bg-white/90 border border-gray-200 shadow-lg hover:shadow-red-900/30 min-h-[500px] md:min-h-[550px]"
 								}
           py-12 px-6 md:px-8
