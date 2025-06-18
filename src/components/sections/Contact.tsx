@@ -27,23 +27,13 @@ export const Contact = () => {
           <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 hover:border-pink-700/30">
             <h3 className="text-2xl font-bold mb-6 text-white">Send us a message</h3>
             <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <Label htmlFor="firstName" className="text-white">First Name</Label>
-                  <Input
-                    id="firstName"
-                    placeholder="John"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:bg-white/20 transition-all duration-300 focus:border-pink-700"
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="lastName" className="text-white">Last Name</Label>
-                  <Input
-                    id="lastName"
-                    placeholder="Doe"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:bg-white/20 transition-all duration-300 focus:border-pink-700"
-                  />
-                </div>
+              <div>
+                <Label htmlFor="fullName" className="text-white">Full Name</Label>
+                <Input
+                  id="fullName"
+                  placeholder="John Doe"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:bg-white/20 transition-all duration-300 focus:border-green-400"
+                />
               </div>
               <div>
                 <Label htmlFor="email" className="text-white">Email</Label>
@@ -51,7 +41,16 @@ export const Contact = () => {
                   id="email"
                   type="email"
                   placeholder="john@example.com"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:bg-white/20 transition-all duration-300 focus:border-pink-700"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:bg-white/20 transition-all duration-300 focus:border-green-400"
+                />
+              </div>
+              <div>
+                <Label htmlFor="phone" className="text-white">Phone Number</Label>
+                <Input
+                  id="phone"
+                  type="tel"
+                  placeholder="+880123456789"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:bg-white/20 transition-all duration-300 focus:border-green-400"
                 />
               </div>
               <div>
@@ -59,7 +58,7 @@ export const Contact = () => {
                 <Input
                   id="company"
                   placeholder="Your Company"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:bg-white/20 transition-all duration-300 focus:border-pink-700"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:bg-white/20 transition-all duration-300 focus:border-green-400"
                 />
               </div>
               <div>
@@ -67,10 +66,10 @@ export const Contact = () => {
                 <Textarea
                   id="message"
                   placeholder="Tell us about your business needs..."
-                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 min-h-[120px] focus:bg-white/20 transition-all duration-300 focus:border-pink-700"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 min-h-[120px] focus:bg-white/20 transition-all duration-300 focus:border-green-400"
                 />
               </div>
-              <Button className="w-full bg-gradient-to-r from-pink-700 to-pink-900 hover:from-pink-800 hover:to-pink-950 text-white transform hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-700/25">
+              <Button className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white transform hover:scale-105 transition-all duration-300 shadow-lg shadow-green-500/25">
                 Send Message
               </Button>
             </form>
@@ -144,7 +143,9 @@ export const Contact = () => {
                 <div className="flex items-center space-x-3 group cursor-pointer">
                   {/* Twitter Icon */}
                   <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-sky-400"><path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 00-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 00-.666 2.475c0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 01-6.102 2.104c-.396 0-.787-.023-1.175-.069a13.945 13.945 0 007.548 2.212c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-sky-400">
+                      <path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 00-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 00-.666 2.475c0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 01-6.102 2.104c-.396 0-.787-.023-1.175-.069a13.945 13.945 0 007.548 2.212c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/>
+                    </svg>
                   </span>
                   <span className="group-hover:text-white transition-colors duration-300">Twitter: @test</span>
                 </div>
