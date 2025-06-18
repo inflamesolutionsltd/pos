@@ -12,11 +12,17 @@ const plans = {
 			period: "/month",
 			description: "Perfect for single location businesses",
 			features: [
-				"Single Location",
-				"1 POS Terminal",
-				"Basic Reports",
+				"Product Upload (400)",
+				"Purchase Management",
+				"Sales Management",
 				"Stock & Sales Management",
-				"Email support",
+				"User- 1",
+				"Admin Panel ",
+				"Basic Reports ",
+				"Online Training x 2",
+				"Customer Support",
+
+
 			],
 			popular: false,
 		},
@@ -27,12 +33,22 @@ const plans = {
 			period: "/month",
 			description: "Most popular for expanding businesses",
 			features: [
-				"Up to 3 Locations",
-				"5 Users",
-				"Full Feature Access",
+				"Product Upload (400)",
+				"Purchase Management",
+				"Sales Management",
+				"Expenses Management",
+				"Quatation",
+				"Product Variants",
+				"Monthly Data Backup",
+				"Stock & Sales Management",
+				"User- 5",
+				"Admin Panel ",
+				"Basic Reports ",
+				"Online Training x 5",
+				"Customer Support",
 				"Email & SMS Notification",
 				"Priority Support",
-				"Advanced analytics",
+
 			],
 			popular: true,
 		},
@@ -40,15 +56,28 @@ const plans = {
 			name: "Premium Plan",
 			subtitle: "Large-Scale Solution",
 			price: "BDT 899",
-			period: "",
+			period: "/month",
 			description: "For large scale operations",
 			features: [
-				"Unlimited Locations",
-				"Unlimited Users",
-				"Custom Features",
+				"Product Upload (Unlimited)",
+				"Purchase Management",
+				"Sales Management",
+				"Expenses Management",
+				"Quatation",
+				"Product Variants",
+				"Daily Data Backup",
+				"Stock & Sales Management",
+				"User- 5",
+				"Admin Panel ",
+				"All Reports ",
+				"Online Training (Unlimited) & Offline Training x 2",
+				"Customer Support",
+				"Email & SMS Notification",
+				"Priority Support",
+				"Activity Logs",
 				"API Access & Integration",
 				"Dedicated Support Team",
-				"SLA guarantee",
+
 			],
 			popular: false,
 		},
@@ -61,11 +90,15 @@ const plans = {
 			period: "/6 months",
 			description: "Perfect for single location businesses",
 			features: [
-				"Single Location",
-				"1 POS Terminal",
-				"Basic Reports",
+				"Product Upload (400)",
+				"Purchase Management",
+				"Sales Management",
 				"Stock & Sales Management",
-				"Email support",
+				"User- 1",
+				"Admin Panel ",
+				"Basic Reports ",
+				"Online Training x 2",
+				"Customer Support",
 			],
 			popular: false,
 		},
@@ -76,12 +109,21 @@ const plans = {
 			period: "/6 months",
 			description: "Most popular for expanding businesses",
 			features: [
-				"Up to 3 Locations",
-				"5 Users",
-				"Full Feature Access",
+				"Product Upload (400)",
+				"Purchase Management",
+				"Sales Management",
+				"Expenses Management",
+				"Quatation",
+				"Product Variants",
+				"Monthly Data Backup",
+				"Stock & Sales Management",
+				"User- 5",
+				"Admin Panel ",
+				"Basic Reports ",
+				"Online Training x 5",
+				"Customer Support",
 				"Email & SMS Notification",
 				"Priority Support",
-				"Advanced analytics",
 			],
 			popular: true,
 		},
@@ -89,15 +131,27 @@ const plans = {
 			name: "Premium Plan",
 			subtitle: "Large-Scale Solution",
 			price: "BDT 5000",
-			period: "",
+			period: "/six months",
 			description: "For large scale operations",
 			features: [
-				"Unlimited Locations",
-				"Unlimited Users",
-				"Custom Features",
+				"Product Upload (Unlimited)",
+				"Purchase Management",
+				"Sales Management",
+				"Expenses Management",
+				"Quatation",
+				"Product Variants",
+				"Daily Data Backup",
+				"Stock & Sales Management",
+				"User- 5",
+				"Admin Panel ",
+				"All Reports ",
+				"Online Training (Unlimited) & Offline Training x 2",
+				"Customer Support",
+				"Email & SMS Notification",
+				"Priority Support",
+				"Activity Logs",
 				"API Access & Integration",
 				"Dedicated Support Team",
-				"SLA guarantee",
 			],
 			popular: false,
 		},
@@ -110,11 +164,15 @@ const plans = {
 			period: "/year",
 			description: "Perfect for single location businesses",
 			features: [
-				"Single Location",
-				"1 POS Terminal",
-				"Basic Reports",
+				"Product Upload (400)",
+				"Purchase Management",
+				"Sales Management",
 				"Stock & Sales Management",
-				"Email support",
+				"User- 1",
+				"Admin Panel ",
+				"Basic Reports ",
+				"Online Training x 2",
+				"Customer Support",
 			],
 			popular: false,
 		},
@@ -125,12 +183,21 @@ const plans = {
 			period: "/year",
 			description: "Most popular for expanding businesses",
 			features: [
-				"Up to 3 Locations",
-				"5 Users",
-				"Full Feature Access",
+				"Product Upload (400)",
+				"Purchase Management",
+				"Sales Management",
+				"Expenses Management",
+				"Quatation",
+				"Product Variants",
+				"Monthly Data Backup",
+				"Stock & Sales Management",
+				"User- 5",
+				"Admin Panel ",
+				"Basic Reports ",
+				"Online Training x 5",
+				"Customer Support",
 				"Email & SMS Notification",
 				"Priority Support",
-				"Advanced analytics",
 			],
 			popular: true,
 		},
@@ -138,15 +205,27 @@ const plans = {
 			name: "Premium Plan",
 			subtitle: "Large-Scale Solution",
 			price: "BDT 10000",
-			period: "",
+			period: "/year",
 			description: "For large scale operations",
 			features: [
-				"Unlimited Locations",
-				"Unlimited Users",
-				"Custom Features",
+				"Product Upload (Unlimited)",
+				"Purchase Management",
+				"Sales Management",
+				"Expenses Management",
+				"Quatation",
+				"Product Variants",
+				"Daily Data Backup",
+				"Stock & Sales Management",
+				"User- 5",
+				"Admin Panel ",
+				"All Reports ",
+				"Online Training (Unlimited) & Offline Training x 2",
+				"Customer Support",
+				"Email & SMS Notification",
+				"Priority Support",
+				"Activity Logs",
 				"API Access & Integration",
 				"Dedicated Support Team",
-				"SLA guarantee",
 			],
 			popular: false,
 		},
@@ -165,7 +244,7 @@ export const Pricing = () => {
 
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div className="text-center space-y-6 mb-16">
-					<h2 className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+					<h2 className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-pink-800 bg-clip-text text-transparent">
 						Choose the Perfect Plan for Your Business
 					</h2>
 					<p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -174,28 +253,19 @@ export const Pricing = () => {
 					</p>
 					<div className="flex justify-center gap-4">
 						<button
-							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "monthly"
-									? "bg-green-600 text-white"
-									: "bg-gray-200 text-gray-800"
-								}`}
+							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "monthly" ? "bg-pink-600 text-white" : "bg-gray-200 text-gray-800"}`}
 							onClick={() => setSelectedPlan("monthly")}
 						>
 							Monthly
 						</button>
 						<button
-							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "sixMonths"
-									? "bg-green-600 text-white"
-									: "bg-gray-200 text-gray-800"
-								}`}
+							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "sixMonths" ? "bg-pink-600 text-white" : "bg-gray-200 text-gray-800"}`}
 							onClick={() => setSelectedPlan("sixMonths")}
 						>
 							6 Months
 						</button>
 						<button
-							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "yearly"
-									? "bg-green-600 text-white"
-									: "bg-gray-200 text-gray-800"
-								}`}
+							className={`px-4 py-2 rounded-lg font-semibold ${selectedPlan === "yearly" ? "bg-pink-600 text-white" : "bg-gray-200 text-gray-800"}`}
 							onClick={() => setSelectedPlan("yearly")}
 						>
 							Yearly
