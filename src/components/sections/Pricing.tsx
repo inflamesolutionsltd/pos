@@ -87,7 +87,7 @@ const plans = {
 			name: "Basic Plan",
 			subtitle: "Best for Small Shops",
 			price: "BDT 1100",
-			period: "/6 months",
+			period: "/Six months",
 			description: "Perfect for single location businesses",
 			features: [
 				"Product Upload (400)",
@@ -106,7 +106,7 @@ const plans = {
 			name: "Standard Plan",
 			subtitle: "For Growing Businesses",
 			price: "BDT 2200",
-			period: "/6 months",
+			period: "/ Six months",
 			description: "Most popular for expanding businesses",
 			features: [
 				"Product Upload (400)",
@@ -131,7 +131,7 @@ const plans = {
 			name: "Premium Plan",
 			subtitle: "Large-Scale Solution",
 			price: "BDT 5000",
-			period: "/six months",
+			period: "/Six months",
 			description: "For large scale operations",
 			features: [
 				"Product Upload (Unlimited)",
