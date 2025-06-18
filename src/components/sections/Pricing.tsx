@@ -86,7 +86,7 @@ const plans = {
 		{
 			name: "Basic Plan",
 			subtitle: "Best for Small Shops",
-			price: "BDT 1100",
+			price: "BDT 1099",
 			period: "/Six months",
 			description: "Perfect for single location businesses",
 			features: [
@@ -105,7 +105,7 @@ const plans = {
 		{
 			name: "Standard Plan",
 			subtitle: "For Growing Businesses",
-			price: "BDT 2200",
+			price: "BDT 2299",
 			period: "/ Six months",
 			description: "Most popular for expanding businesses",
 			features: [
@@ -130,7 +130,7 @@ const plans = {
 		{
 			name: "Premium Plan",
 			subtitle: "Large-Scale Solution",
-			price: "BDT 5000",
+			price: "BDT 5099",
 			period: "/Six months",
 			description: "For large scale operations",
 			features: [
@@ -160,7 +160,7 @@ const plans = {
 		{
 			name: "Basic Plan",
 			subtitle: "Best for Small Shops",
-			price: "BDT 2000",
+			price: "BDT 2199",
 			period: "/year",
 			description: "Perfect for single location businesses",
 			features: [
@@ -179,7 +179,7 @@ const plans = {
 		{
 			name: "Standard Plan",
 			subtitle: "For Growing Businesses",
-			price: "BDT 4000",
+			price: "BDT 3999",
 			period: "/year",
 			description: "Most popular for expanding businesses",
 			features: [
@@ -204,7 +204,7 @@ const plans = {
 		{
 			name: "Premium Plan",
 			subtitle: "Large-Scale Solution",
-			price: "BDT 10000",
+			price: "BDT 10099",
 			period: "/year",
 			description: "For large scale operations",
 			features: [
