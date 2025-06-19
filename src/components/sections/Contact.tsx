@@ -141,13 +141,6 @@ export const Contact = () => {
                   </span>
                   <span className="group-hover:text-white transition-colors duration-300">Facebook: Inflame Solutions Ltd.</span>
                 </div>
-                <div className="flex items-center space-x-3 group cursor-pointer">
-                  {/* Twitter Icon */}
-                  <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-sky-400"><path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 00-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 00-.666 2.475c0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 01-6.102 2.104c-.396 0-.787-.023-1.175-.069a13.945 13.945 0 007.548 2.212c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/></svg>
-                  </span>
-                  <span className="group-hover:text-white transition-colors duration-300">Twitter: @test</span>
-                </div>
               </div>
             </div>
 
@@ -158,12 +151,13 @@ export const Contact = () => {
                   <span>Monday - Friday</span>
                   <span>9:00 AM - 6:00 PM</span>
                 </div>
+          
                 <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>10:00 AM - 4:00 PM</span>
+                  <span>Friday</span>
+                  <span>Closed</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Sunday</span>
+                  <span>Saturday</span>
                   <span>Closed</span>
                 </div>
               </div>

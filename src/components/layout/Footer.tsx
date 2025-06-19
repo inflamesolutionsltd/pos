@@ -1,4 +1,3 @@
-
 export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -41,6 +40,32 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
+      </div>
+      {/* Certification Section at the very bottom */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8 border-t border-gray-800 pt-6">
+        <span className="text-gray-300 font-medium">Certified by</span>
+        <img
+          src="https://basis.org.bd/public/images/logo.svg"
+          alt="BASIS Certified"
+          className="h-10 w-auto bg-white rounded shadow p-1"
+          style={{ background: 'white' }}
+        />
+        <img
+          src="https://ictd.gov.bd/themes/responsive_npf/img/np-logo-set.png"
+          alt="ICT Division Certified"
+          className="h-10 w-auto bg-white rounded shadow p-1"
+          style={{ background: 'white' }}
+        />
+      </div>
+      {/* Payment Partner Section at the very bottom */}
+      <div className="flex items-center justify-center mt-4">
+        <span className="text-gray-300 font-medium">Pay with&nbsp;</span>
+        <img
+          src="https://dotinternetbd.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsslcommerz-foo2.100447b6.png&w=3840&q=75"
+          alt="SSLCommerz Payment Partner"
+          className="h-10 w-auto bg-white rounded shadow p-1"
+          style={{ background: 'white' }}
+        />
       </div>
     </footer>
   );

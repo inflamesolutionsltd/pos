@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -33,12 +32,15 @@ export const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-gray-700">
-              Login
-            </Button>
-            <Button className="bg-gradient-to-r from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800 text-white">
-              Book Demo
-            </Button>
+            <a
+              href="https://calendly.com/inflamewebsiteltd/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-gradient-to-r from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800 text-white">
+                Book a 10 Min Call!
+              </Button>
+            </a>
           </div>
 
           <div className="md:hidden">
@@ -63,7 +65,15 @@ export const Header = () => {
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-pink-600">Contact Us</a>
               <div className="flex flex-col space-y-2 px-3 pt-4">
                 <Button variant="ghost" className="w-full">Login</Button>
-                <Button className="w-full bg-gradient-to-r from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800">Book Demo</Button>
+                <a
+                  href="https://calendly.com/inflamewebsiteltd/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full bg-gradient-to-r from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800">
+                    Book a 10 Min Call!
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

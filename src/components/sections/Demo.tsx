@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -30,17 +29,29 @@ export const Demo = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white transform hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-500/25">
-                  📅 Schedule a Free Demo Now
-                </Button>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transform hover:scale-105 transition-all duration-300">
-                  Request Demo
-                </Button>
+                <a
+                  href="https://calendly.com/inflamewebsiteltd/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="lg" className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white transform hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-500/25">
+                    📅 Schedule a 15 Minute Call
+                  </Button>
+                </a>
+                <a
+                  href="http://pos.inflamesolutions.com/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transform hover:scale-105 transition-all duration-300">
+                    Live Demo
+                  </Button>
+                </a>
               </div>
 
               <div className="mt-8 p-6 bg-white/5 rounded-lg border border-white/10">
                 <p className="text-gray-200 text-sm">
-                  ✨ No commitment required • 30-minute personalized session • See real-time features
+                  No commitment required • 15-minute personalized session • See real-time features
                 </p>
               </div>
             </div>
