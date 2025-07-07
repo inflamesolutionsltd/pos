@@ -61,7 +61,7 @@ export const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://pos.inflamesolutions.com/login"
+                href="https://pos.inflameltd.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
