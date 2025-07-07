@@ -39,7 +39,7 @@ export const Demo = () => {
                   </Button>
                 </a>
                 <a
-                  href="http://pos.inflamesolutions.com/login"
+                  href="https://pos.inflameltd.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
